@@ -146,6 +146,7 @@ footer {
 .world_img_container img{
     height: 600px;
     width: 800px;
+    max-width: 100%; 
 }
 
 @media (max-width: 768px) {
