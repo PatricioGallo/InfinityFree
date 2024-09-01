@@ -41,7 +41,7 @@ $folders = listFolders($baseDir);
         <h1>Report Lists</h1>
         <ul>
             <?php foreach ($folders as $folder): ?>
-                <li><a href="files/<?php echo $folder; ?>/"><?php echo $folder; ?></a></li>
+                <li><a href="<?php echo $baseDir; ?>/<?php echo $folder; ?>/"><?php echo $folder; ?></a></li>
             <?php endforeach; ?>
         </ul>
     </main>
