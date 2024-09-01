@@ -1,20 +1,23 @@
 <?php
 function listFolders($dir) {
-    $items = array_diff(scandir($dir), array('.', '..'));
+    $items = array_diff(scandir($dir), array('.', '..')); // Ignorar . y ..
     $folders = [];
 
     foreach ($items as $item) {
         $path = $dir . '/' . $item;
         if (is_dir($path)) {
+            // Añadir la carpeta y su fecha de modificación a un array
             $folders[$item] = filemtime($path);
         }
     }
+
+    // Ordenar las carpetas por fecha de modificación, de más reciente a más antigua
     arsort($folders);
 
-    return array_keys($folders);
+    return array_keys($folders); // Devolver solo los nombres de las carpetas en el orden correcto
 }
 
-$baseDir = 'files/cnea';
+$baseDir = 'files/cnea'; // Carpeta base
 $folders = listFolders($baseDir);
 ?>
 
@@ -31,8 +34,8 @@ $folders = listFolders($baseDir);
 <body>
     <header>
         <a href="index.php"><img src="img/logo.webp" alt="EmTech Logo"> </a>
-        <a href="index.php"><h2>Home</h2></a> 
         <h1>Coverage reports</h1>
+        <a href="index.php"><h2>Home</h2></a> 
     </header>
     <main>
         <h1>Report Lists</h1>

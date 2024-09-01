@@ -11,8 +11,8 @@
 <body>
     <header>
         <a href="index.php"><img src="img/logo.webp" alt="EmTech Logo"> </a>
-        <h2>Verification</h2>
-        <h1>Coverage reports</h1>
+        <h1>Verification</h1>
+        <a href="index.php"><h2>Home</h2></a> 
     </header>
     <div class="cuerpo_index">
         <div class="banner">

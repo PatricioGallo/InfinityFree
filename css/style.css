@@ -36,6 +36,9 @@ header a{
 header a:hover{
     color: #485766;
 }
+header h2{
+    font-size: 18px;
+}
 
 main {
     flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
