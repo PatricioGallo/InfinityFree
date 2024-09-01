@@ -14,7 +14,7 @@ function listFolders($dir) {
     return array_keys($folders);
 }
 
-$baseDir = 'files';
+$baseDir = 'files/cnea';
 $folders = listFolders($baseDir);
 ?>
 
