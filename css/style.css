@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que html y body ocupen el 100% de la altura de la pantalla */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido verticalmente */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #003366; /* Azul oscuro (EmTech) */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Permite el ajuste en pantallas pequeñas */
+}
+
+header img {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px; /* Tamaño del texto del encabezado */
+}
+
+main {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo gris claro para contraste */
+}
+
+main h1 {
+    font-size: 22px; /* Tamaño del título principal */
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+main li {
+    margin: 10px 0;
+}
+
+main a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #003366;
+    background-color: white;
+    border-radius: 8px; /* Bordes redondeados para un diseño moderno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main a:hover {
+    background-color: #485766;
+    color: white;
+}
+
+footer {
+    background-color: #003366; /* Azul oscuro (EmTech) */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Organiza el contenido del encabezado verticalmente en pantallas pequeñas */
+        align-items: center;
+    }
+    header h2{
+        display: none;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 20px; /* Tamaño del texto del encabezado en pantallas pequeñas */
+    }
+
+    main h1 {
+        font-size: 20px; /* Tamaño del título principal en pantallas pequeñas */
+    }
+    footer{
+        font-size: 11px;
+    }
+}
