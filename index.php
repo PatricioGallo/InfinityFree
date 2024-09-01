@@ -20,7 +20,7 @@
         </div>
         <div class="box_clients_content">
             <div class="box_clients">
-                <div class="clients_img"> <a href="./index2.html"> <img src="img/CNEA.webp" alt=""></a></div>
+                <div class="clients_img"> <a href="index2.php"> <img src="img/CNEA.webp" alt=""></a></div>
                 <div class="clients_img"> <a href=""> <img src="img/invap.png" alt=""></a></div>
                 <div class="clients_img"> <a href=""> <img src="img/tenaris.webp" alt=""></a></div>
             </div>
