@@ -33,9 +33,9 @@ $folders = listFolders($baseDir);
 </head>
 <body>
     <header>
-        <a href="https://filemanager.ai/new/#"><img src="img/logo.webp" alt="EmTech Logo"> </a>
+        <a href="index.php"><img src="img/logo.webp" alt="EmTech Logo"> </a>
         <h2>Verificacion</h2>
-        <h1>Reportes de CAMBIOS</h1>
+        <h1>Reportes de Coverage</h1>
     </header>
     <main>
         <h1>Lista de Reportes</h1>
